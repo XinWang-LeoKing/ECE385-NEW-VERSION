@@ -25,7 +25,6 @@ module bullet_controller (//input Reset,              // Active-high reset signa
    logic [9:0] bullet_x [20];
 	logic [9:0] bullet_y [20];
 	logic [19:0] shoot;
-	logic [1:0] acc;
 
 	//logic [19:0] hit;
 	//logic [1:0] bullet_state [20];
@@ -35,6 +34,7 @@ module bullet_controller (//input Reset,              // Active-high reset signa
 	
 	logic [9:0] delay, delay_in;
 	logic [9:0] gengi_delay, gengi_delay_in;
+	logic [1:0] acc, acc_in;
 	
 	logic [9:0] dart_shape_it[20];
 	logic [9:0] dart_shape_ib[20];
@@ -77,6 +77,7 @@ always_ff @ (posedge frame_clk) begin
 	//else begin
 		delay <= delay_in;
 		gengi_delay <= gengi_delay_in;
+		acc <= acc_in;
 	//end
 	
 end
@@ -99,7 +100,7 @@ always_comb begin
 	end else begin //gengi for def
 		X_Step = 10'd3;
 		fire_range = 10'd320;
-		fire_period = 10'b10;
+		fire_period = 10'b100;
 		reload_period = 10'd100;
 		gengi_period = 10'd30;
 	end
@@ -108,7 +109,7 @@ always_comb begin
 	//set default case
 	delay_in = delay;
 	gengi_delay_in = 0;
-	acc = 2'b0;
+	acc_in = acc;
 
 	counter_reset = 1'b0;
 	bullet_color = 24'hffffff;
@@ -132,15 +133,15 @@ always_comb begin
 			if (bullet_state[i]==2'b00) begin
 				shoot[i] = 1'b1;
 				counter_reset = 1'b1;
-				delay_in = 1'b1;
+				delay_in = 10'b1;
 				//if gengi
-				acc = acc + 2'b01;
+				acc_in = acc_in + 2'b01;
 				break;
 			end
 		end
 	end
 	
-	if (acc==2'b11)begin
+	if (acc_in==2'b11)begin
 		delay_in = 10'b1;
 		if (gengi_delay==10'b0) // count after shooting
 			gengi_delay_in = gengi_delay + 10'b1;
