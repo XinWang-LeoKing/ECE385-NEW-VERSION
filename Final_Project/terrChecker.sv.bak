@@ -1,0 +1,15 @@
+module  terrChecker ( input [9:0]   left, right, top, bot,     
+						   
+						    output logic  on_build,            
+							 output logic  on_ground
+						  );
+
+	 always_comb 
+	 begin
+			if (bot==439)
+				on_ground = 1'b1; 
+			else if ((bot==397&&left>=11&&right<=91)||(bot==317&&left>=28&&right<=267))
+				on_build = 1'b1;
+	 end
+
+endmodule	

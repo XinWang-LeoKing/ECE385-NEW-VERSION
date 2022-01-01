@@ -1,0 +1,19 @@
+
+//count from 0 to 719, 12 seconds
+module counter(input frame_clk, reset,
+
+					output logic [9:0] count
+					);
+	logic [9:0] count_in;
+	assign count = count_in;
+
+always_ff @ (posedge frame_clk) begin
+	if(reset)
+		count_in <= 0;
+	//else if(counter == 10'd719)
+		//count_in <= 0;
+	else if(counter <= 10'd719)
+		count_in <= count_in + 10'b1;
+end
+
+endmodule

@@ -1,0 +1,141 @@
+
+module  chara (input        Clk,                // 50 MHz clock
+                             Reset,              // Active-high reset signal
+                             frame_clk,          // The clock indicating a new frame (~60Hz)
+					 input press_w, press_a, press_s, press_d, // keyboard input
+					 input on_ground, on_build, // whether the character is on the ground or on the building
+					 input [6:0] width, height,
+					 input [9:0] left_initial, bot_initial, bias,
+					
+					 output logic chara_direction, // the character face left or face right
+					 output logic moving_left, moving_right, moving_up, moving_down, // whether the character is moving left/right/up
+					 output logic [9:0] top, bot, left, right, speed_y
+                );
+	 
+    parameter [9:0] X_Min = 10'd0;       // Leftmost point on the X axis
+    parameter [9:0] X_Max = 10'd639;     // Rightmost point on the X axis
+    parameter [9:0] Y_Min = 10'd0;       // Topmost point on the Y axis
+    parameter [9:0] Y_Max = 10'd439;     // Bottommost point on the Y axis
+    parameter [9:0] X_Step = 10'd2;      // Step size on the X axis
+    parameter [9:0] Y_Step = 10'd3;      // Step size on the Y axis
+    
+	logic [9:0] left_in, top_in; // input of register 
+	
+	logic moving_left_in, moving_right_in, chara_direction_in;
+	
+	logic [9:0] speed_y_before;
+	
+	logic [9:0] count_y;
+	logic counter_y_reset;
+	
+	assign bot = top + height; assign right = left + width; // the character has a size (height+1)*(width+1)
+	
+	enum logic [1:0] {STAND, MOVING_UP, MOVING_DOWN} state_y, next_state_y;
+		
+// Update registers
+always_ff @ (posedge frame_clk) begin
+		moving_left <= moving_left_in;
+		moving_right <= moving_right_in;
+		chara_direction <= chara_direction_in;
+		speed_y_before <= speed_y;
+		state_y <= next_state_y;
+	
+	if (Reset) begin
+		left <= left_initial;
+		top <= bot_initial - height;
+		state_y <= STAND;
+	end
+	else if ((right>X_Max-X_Step&&chara_direction)||(left<X_Min+X_Step&&~chara_direction)) begin // out of left or right boundary
+		top <= top_in;
+	end
+	else begin
+		left <= left_in;
+		top <= top_in;
+	end
+end
+
+always_comb begin
+		// default case
+		left_in = left;
+		chara_direction_in = chara_direction;
+		moving_left_in = moving_left;
+		moving_right_in = moving_right;
+		speed_y = speed_y_before;
+		counter_y_reset = 0;
+		next_state_y = state_y;
+		
+	
+	// moving left and right
+	if (press_a) //left
+	begin
+		left_in = left + (~(X_Step) + 1'b1);
+		chara_direction_in = 1'b0; // face left
+		moving_left_in = 1'b1;
+	end
+	else if (press_d) //right
+	begin
+		left_in = left + X_Step;
+		chara_direction_in = 1'b1; // face right
+		moving_right_in = 1'b1;
+	end
+	
+	// moving up and down
+	unique case (state_y)
+		STAND: begin
+			if(press_w&&(on_ground||on_build)) begin
+				counter_y_reset = 1'b1;
+				speed_y = 10'b1111111010; // initial speed in y-direction is -6
+				next_state_y = MOVING_UP;
+			end
+			else if (press_s&&on_build) begin // press s and drop down
+				next_state_y = MOVING_DOWN;
+				speed_y = 10'b1;
+				counter_y_reset = 1'b1;
+			end
+			else if (~on_ground&&~on_build) begin // no ground below and drop down
+				next_state_y = MOVING_DOWN;
+				speed_y = 10'b1;
+				counter_y_reset = 1'b1;
+			end
+			else
+				speed_y = 0;
+		end
+		
+		MOVING_UP: begin
+			if (speed_y==0) begin // from up to down
+				speed_y = 10'b1; // initial speed in y-direction is 1
+				next_state_y = MOVING_DOWN;
+				counter_y_reset = 1'b1;
+			end
+			else if (count_y==10'd5) begin // speed down per 66 frame clk
+				speed_y = speed_y_before + 1'b1;
+				counter_y_reset = 1'b1;
+			end
+			else begin
+				counter_y_reset = 1'b0;
+			end
+		end
+		
+		MOVING_DOWN: begin
+			if (on_ground||(on_build&&~press_s)) begin// touch the ground
+				next_state_y = STAND;
+				speed_y = 0;
+			end
+			else if (count_y==10'd5) begin // speed up per 6 frame clk
+				speed_y = speed_y_before + 1'b1;
+				counter_y_reset = 1'b1;
+			end
+			else begin
+				counter_y_reset = 1'b0;
+			end
+		end
+		default:;
+	endcase
+	
+		top_in = top + speed_y + bias;
+		
+end
+
+counter counter_y(.reset(counter_y_reset), .frame_clk(frame_clk), .count(count_y));
+
+endmodule	

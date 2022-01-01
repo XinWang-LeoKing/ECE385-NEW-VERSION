@@ -1,0 +1,196 @@
+
+State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_19|state
+Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
+state.WAIT 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.CD 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_18|state
+Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
+state.WAIT 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.CD 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_17|state
+Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
+state.WAIT 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.CD 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_16|state
+Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
+state.WAIT 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.CD 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_15|state
+Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
+state.WAIT 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.CD 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_14|state
+Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
+state.WAIT 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.CD 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_13|state
+Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
+state.WAIT 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.CD 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_12|state
+Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
+state.WAIT 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.CD 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_11|state
+Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
+state.WAIT 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.CD 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_10|state
+Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
+state.WAIT 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.CD 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_9|state
+Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
+state.WAIT 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.CD 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_8|state
+Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
+state.WAIT 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.CD 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_7|state
+Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
+state.WAIT 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.CD 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_6|state
+Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
+state.WAIT 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.CD 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_5|state
+Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
+state.WAIT 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.CD 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_4|state
+Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
+state.WAIT 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.CD 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_3|state
+Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
+state.WAIT 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.CD 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_2|state
+Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
+state.WAIT 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.CD 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_1|state
+Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
+state.WAIT 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.CD 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_0|state
+Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
+state.WAIT 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.CD 1 0 0 1 
+
+State Machine - |lab8|chara:chara_2_instance|state_y
+Name state_y.STAND state_y.MOVING_DOWN state_y.MOVING_UP 
+state_y.STAND 0 0 0 
+state_y.MOVING_UP 1 0 1 
+state_y.MOVING_DOWN 1 1 0 
+
+State Machine - |lab8|chara:chara_1_instance|state_y
+Name state_y.STAND state_y.MOVING_DOWN state_y.MOVING_UP 
+state_y.STAND 0 0 0 
+state_y.MOVING_UP 1 0 1 
+state_y.MOVING_DOWN 1 1 0 
+
+State Machine - |lab8|nios_system:nios_system|nios_system_sdram:sdram|m_next
+Name m_next.010000000 m_next.000010000 m_next.000001000 m_next.000000001 
+m_next.000000001 0 0 0 0 
+m_next.000001000 0 0 1 1 
+m_next.000010000 0 1 0 1 
+m_next.010000000 1 0 0 1 
+
+State Machine - |lab8|nios_system:nios_system|nios_system_sdram:sdram|m_state
+Name m_state.100000000 m_state.010000000 m_state.001000000 m_state.000100000 m_state.000010000 m_state.000001000 m_state.000000100 m_state.000000010 m_state.000000001 
+m_state.000000001 0 0 0 0 0 0 0 0 0 
+m_state.000000010 0 0 0 0 0 0 0 1 1 
+m_state.000000100 0 0 0 0 0 0 1 0 1 
+m_state.000001000 0 0 0 0 0 1 0 0 1 
+m_state.000010000 0 0 0 0 1 0 0 0 1 
+m_state.000100000 0 0 0 1 0 0 0 0 1 
+m_state.001000000 0 0 1 0 0 0 0 0 1 
+m_state.010000000 0 1 0 0 0 0 0 0 1 
+m_state.100000000 1 0 0 0 0 0 0 0 1 
+
+State Machine - |lab8|nios_system:nios_system|nios_system_sdram:sdram|i_next
+Name i_next.111 i_next.101 i_next.010 i_next.000 
+i_next.000 0 0 0 0 
+i_next.010 0 0 1 1 
+i_next.101 0 1 0 1 
+i_next.111 1 0 0 1 
+
+State Machine - |lab8|nios_system:nios_system|nios_system_sdram:sdram|i_state
+Name i_state.111 i_state.101 i_state.011 i_state.010 i_state.001 i_state.000 
+i_state.000 0 0 0 0 0 0 
+i_state.001 0 0 0 0 1 1 
+i_state.010 0 0 0 1 0 1 
+i_state.011 0 0 1 0 0 1 
+i_state.101 0 1 0 0 0 1 
+i_state.111 1 0 0 0 0 1 
+
+State Machine - |lab8|nios_system:nios_system|nios_system_nios2_gen2_0:nios2_gen2_0|nios_system_nios2_gen2_0_cpu:cpu|nios_system_nios2_gen2_0_cpu_nios2_oci:the_nios_system_nios2_gen2_0_cpu_nios2_oci|nios_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nios_system_nios2_gen2_0_cpu_debug_slave_wrapper|nios_system_nios2_gen2_0_cpu_debug_slave_tck:the_nios_system_nios2_gen2_0_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 

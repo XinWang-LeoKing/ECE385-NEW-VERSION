@@ -1,0 +1,28 @@
+/*
+ * ECE385-HelperTools/PNG-To-Txt
+ * Author: Rishi Thakkar
+ *
+ */
+
+module  frameROM
+(
+        input [18:0] read_address,
+        input Clk,
+
+        output logic [11:0] spriteColor
+);
+
+// mem has width of 12 bits and a total of 640*480 addresses
+logic [11:0] mem [0:307199];
+
+initial
+begin
+     $readmemh("Route66.txt", mem);
+end
+
+
+always_ff @ (posedge Clk) begin
+    spriteColor <= mem[read_address]; // why not use combinational logic here?
+end
+
+endmodule

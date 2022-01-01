@@ -1,0 +1,44 @@
+
+module testbench();
+	
+	timeunit 10ns;
+	timeprecision 1ns;
+
+	// Set variables and instance.
+	logic CLK;
+	logic press_w, on_ground, on_build, Reset, moving_up;
+	
+	 is_moving_up (	.press_w(press_w), 
+					.Clk(CLK), 
+					.on_ground(on_ground), 
+					.on_build(on_build),
+					.Reset(Reset),
+					
+					.moving_up(moving_up)
+);
+	
+	// Clock Generation and Initialization.
+	always begin : CLOCK_GENERATION 
+		#1 CLK = ~CLK;
+	end 
+	initial begin: CLOCK_INITIALIZATION 
+		CLK = 0;
+	end
+	
+	initial begin: TEST_VECTORS
+	// Starting Settings
+	AES_START = 1'b0;
+	RESET = 1'b1;
+	
+	// Info of Key and En_message.
+	AES_KEY = 128'h000102030405060708090a0b0c0d0e0f;
+	AES_MSG_ENC = 128'hdaec3055df058e1c39e814ea76f6747e;
+
+	// Prepare to start by stop resetting.
+	#2 RESET = 1'b0;
+	
+	// Start the simulation.
+	#2 AES_START = 1'b1;
+	end
+	 
+endmodule

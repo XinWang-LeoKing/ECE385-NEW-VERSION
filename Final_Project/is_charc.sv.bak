@@ -1,0 +1,16 @@
+module  is_charc ( input [9:0]   DrawX, DrawY,       // Current pixel coordinates
+						 input [9:0]   left, right, top, bot,
+					
+						 output logic  is_charc             // Whether current pixel belongs to ball or background
+						);
+	
+	 // this block for judging whether the pixel belongs to the character
+	 always_comb 
+	 begin
+			if (DrawX>=left&&DrawX<=right&&DrawY>=top&&DrawY<=bot)
+				is_charc = 1'b1; // the pixel belongs to the character
+			else
+				is_charc = 1'b0;
+	 end
+
+endmodule	

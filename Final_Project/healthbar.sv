@@ -1,0 +1,57 @@
+module healthbar (	 input frame_clk,
+							 input [19:0]hit,          	  
+							 input [1:0] bullet_state [20],
+							 input [9:0] DrawX, DrawY,
+							 input reset,
+							 input [9:0]damageUnit,
+							 input [9:0] len_init,
+							 
+							 output logic is_healthbar,
+							 output logic gameover
+							 );
+    parameter [9:0] X_Min = 10'd10;       // Leftmost point on the X axis
+    parameter [9:0] Y_Min = 10'd10;       // Topmost point on the Y axis
+    parameter [9:0] Y_Max = 10'd50;     // Bottommost point on the Y axis
+
+	 logic [9:0]current_len;
+	 logic [9:0]total_damage, total_damage_in;
+	 logic [9:0]current_position;
+	
+	always_ff @ (posedge frame_clk) begin
+		if (reset) begin
+			total_damage <= 0;
+			current_len <= len_init;
+		end
+		else
+			total_damage <= total_damage_in;
+			current_len <= len_init - total_damage;
+	end
+	
+	 always_comb begin
+			gameover = 0;
+			total_damage_in = total_damage;
+			
+			//current_len = current_len - total_damage;
+			current_position = X_Min + current_len;
+			
+			for(int i=0; i<20; i++)begin // calculate damage
+					if(hit[i]&&((bullet_state[i]==2'b01)||(bullet_state[i]==2'b10)))begin
+							total_damage_in = total_damage_in + damageUnit;
+					end
+			end
+
+			//if(current_len<=0)
+					//gameover = 1;
+
+			if (DrawX>=X_Min&&DrawX<=current_position&&DrawY>=Y_Min&&DrawY<=Y_Max) // draw
+				is_healthbar = 1'b1; // the pixel belongs to the character
+			else
+				is_healthbar = 1'b0;
+				
+			if (total_damage_in>=len_init) begin
+				gameover = 1'b1;
+				total_damage_in = len_init;
+			end
+	 end
+endmodule
+

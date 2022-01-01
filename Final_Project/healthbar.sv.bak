@@ -1,0 +1,8 @@
+module healthbar (
+							 input [19:0]hit,          	  
+							 input [1:0] bullet_state [20],
+							 input [9:0] DrawX, DrawY,
+							 
+							 output logic is_healthbar
+							 );
+   
