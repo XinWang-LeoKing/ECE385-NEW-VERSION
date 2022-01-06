@@ -2464,46 +2464,844 @@ Info: Building ../test_bsp/
 C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
 [BSP build complete]
 [test build complete]
-16:27:57 **** Incremental Build of configuration Nios II for project test ****
+11:43:29 **** Incremental Build of configuration Nios II for project test ****
 make all 
 Info: Building ../test_bsp/
 C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
 [BSP build complete]
 [test build complete]
-16:27:59 **** Build of configuration Nios II for project test_bsp ****
+11:43:30 **** Build of configuration Nios II for project test_bsp ****
 make all 
 [BSP build complete]
-16:28:06 **** Incremental Build of configuration Nios II for project test ****
-make all 
-Info: Building ../test_bsp/
-C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
-[BSP build complete]
-[test build complete]
-16:44:13 **** Incremental Build of configuration Nios II for project test ****
+11:43:40 **** Incremental Build of configuration Nios II for project test ****
 make all 
 Info: Building ../test_bsp/
 C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
 [BSP build complete]
 [test build complete]
-16:44:15 **** Incremental Build of configuration Nios II for project test_bsp ****
-make all 
-[BSP build complete]
-16:44:22 **** Incremental Build of configuration Nios II for project test ****
+12:10:42 **** Incremental Build of configuration Nios II for project test ****
 make all 
 Info: Building ../test_bsp/
 C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
 [BSP build complete]
 [test build complete]
-16:57:32 **** Incremental Build of configuration Nios II for project test ****
+12:10:43 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+12:10:48 **** Incremental Build of configuration Nios II for project test ****
 make all 
 Info: Building ../test_bsp/
 C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
 [BSP build complete]
 [test build complete]
-16:57:35 **** Incremental Build of configuration Nios II for project test_bsp ****
+13:08:09 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+13:08:10 **** Incremental Build of configuration Nios II for project test_bsp ****
 make all 
 [BSP build complete]
-16:57:43 **** Incremental Build of configuration Nios II for project test ****
+13:08:19 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+13:17:23 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+13:17:24 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+13:17:29 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+13:30:42 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+13:30:43 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+13:30:49 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+13:38:04 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+13:38:05 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+13:38:10 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+13:39:54 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+13:51:40 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+13:51:41 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+13:51:46 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+13:52:51 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+14:07:37 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+14:07:38 **** Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+14:07:44 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+14:40:06 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+14:40:07 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+14:40:13 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+14:48:20 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+14:48:21 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+14:48:27 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+14:49:22 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+14:50:30 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+14:52:44 **** Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+14:54:58 **** Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+15:01:15 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+15:01:16 **** Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+15:01:21 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+15:10:46 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+15:10:47 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+15:10:53 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+15:20:26 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+15:20:27 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+15:20:32 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+16:34:13 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+16:34:14 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+16:34:19 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+17:08:10 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+17:08:11 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+17:08:16 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+17:19:36 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+17:19:37 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+17:19:42 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+17:30:04 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+17:30:05 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+17:30:10 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+17:33:19 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+17:52:10 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+17:52:11 **** Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+17:52:17 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+18:11:50 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+18:11:51 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+18:11:56 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+18:12:47 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+18:12:48 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+18:12:53 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+18:13:29 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+18:32:36 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+18:32:37 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+18:32:42 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+18:39:36 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+18:49:37 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+18:49:38 **** Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+18:49:44 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+19:19:43 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+19:19:44 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+19:19:50 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+19:20:30 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+19:33:12 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+19:33:13 **** Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+19:33:19 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+20:38:41 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+20:38:42 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+20:38:48 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+20:52:27 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+20:52:28 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+20:52:33 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+21:59:25 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+21:59:26 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+21:59:33 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+22:12:14 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+22:12:15 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+22:12:20 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+22:26:07 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+09:49:34 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+09:49:36 **** Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+09:49:41 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+10:00:32 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+10:00:33 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+10:00:38 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+10:12:31 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+10:12:32 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+10:12:37 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+10:43:50 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+10:43:51 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+10:43:56 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+10:49:19 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+10:50:26 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+10:50:27 **** Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+10:50:32 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+10:54:50 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+10:54:51 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+10:54:56 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+10:55:50 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+11:08:11 **** Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+11:08:12 **** Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+11:08:17 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+11:16:11 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+11:16:12 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+11:16:17 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+11:25:55 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+11:25:56 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+11:26:01 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+11:36:17 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+11:36:18 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+11:36:24 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+12:03:33 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+12:03:34 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+12:03:40 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+13:04:17 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+13:04:18 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+13:04:23 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+13:05:51 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+13:18:33 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+13:18:34 **** Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+13:18:39 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+13:28:33 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+13:28:34 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+13:28:39 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+13:35:56 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+13:35:57 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+13:36:02 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+13:44:40 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+13:44:41 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+13:44:47 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+13:45:29 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+13:51:59 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+13:52:00 **** Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+13:52:05 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+14:07:03 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+14:07:04 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+14:07:10 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+14:25:24 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+14:25:25 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+14:25:29 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+13:28:43 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+13:28:44 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+13:28:52 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+15:17:21 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+15:17:22 **** Incremental Build of configuration Nios II for project test_bsp ****
+make all 
+[BSP build complete]
+15:17:26 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+15:18:06 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+15:36:22 **** Incremental Build of configuration Nios II for project test ****
+make all 
+Info: Building ../test_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/
+[BSP build complete]
+[test build complete]
+15:56:14 **** Incremental Build of configuration Nios II for project test ****
 make all 
 Info: Building ../test_bsp/
 C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_bsp/

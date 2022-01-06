@@ -1,149 +1,887 @@
 
-State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_19|state
-Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
-state.WAIT 0 0 0 0 
+State Machine - |lab8|pulse_bomb:bomb_2_instance|state
+Name state.HIT state.ON_GROUND state.MOVE state.HIDDEN state.BOOM 
+state.HIDDEN 0 0 0 0 0 
+state.MOVE 0 0 1 1 0 
+state.ON_GROUND 0 1 0 1 0 
+state.HIT 1 0 0 1 0 
+state.BOOM 0 0 0 1 1 
+
+State Machine - |lab8|pulse_bomb:bomb_1_instance|state
+Name state.HIT state.ON_GROUND state.MOVE state.HIDDEN state.BOOM 
+state.HIDDEN 0 0 0 0 0 
+state.MOVE 0 0 1 1 0 
+state.ON_GROUND 0 1 0 1 0 
+state.HIT 1 0 0 1 0 
+state.BOOM 0 0 0 1 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_2|bullet:bullet_29|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
 state.MOVING_LEFT 0 0 1 1 
 state.MOVING_RIGHT 0 1 0 1 
-state.CD 1 0 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_2|bullet:bullet_28|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_2|bullet:bullet_27|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_2|bullet:bullet_26|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_2|bullet:bullet_25|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_2|bullet:bullet_24|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_2|bullet:bullet_23|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_2|bullet:bullet_22|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_2|bullet:bullet_21|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_2|bullet:bullet_20|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_2|bullet:bullet_19|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_2|bullet:bullet_18|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_2|bullet:bullet_17|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_2|bullet:bullet_16|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_2|bullet:bullet_15|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_2|bullet:bullet_14|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_2|bullet:bullet_13|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_2|bullet:bullet_12|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_2|bullet:bullet_11|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_2|bullet:bullet_10|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_2|bullet:bullet_9|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_2|bullet:bullet_8|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_2|bullet:bullet_7|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_2|bullet:bullet_6|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_2|bullet:bullet_5|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_2|bullet:bullet_4|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_2|bullet:bullet_3|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_2|bullet:bullet_2|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_2|bullet:bullet_1|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_2|bullet:bullet_0|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_1|bullet:bullet_29|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_1|bullet:bullet_28|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_1|bullet:bullet_27|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_1|bullet:bullet_26|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_1|bullet:bullet_25|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_1|bullet:bullet_24|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_1|bullet:bullet_23|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_1|bullet:bullet_22|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_1|bullet:bullet_21|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_1|bullet:bullet_20|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_1|bullet:bullet_19|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_1|bullet:bullet_18|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_1|bullet:bullet_17|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_1|bullet:bullet_16|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_1|bullet:bullet_15|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_1|bullet:bullet_14|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_1|bullet:bullet_13|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_1|bullet:bullet_12|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_1|bullet:bullet_11|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_1|bullet:bullet_10|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_1|bullet:bullet_9|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_1|bullet:bullet_8|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_1|bullet:bullet_7|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_1|bullet:bullet_6|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_1|bullet:bullet_5|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_1|bullet:bullet_4|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_1|bullet:bullet_3|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_1|bullet:bullet_2|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_1|bullet:bullet_1|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:deflect_controller_1|bullet:bullet_0|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_2|bullet:bullet_29|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_2|bullet:bullet_28|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_2|bullet:bullet_27|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_2|bullet:bullet_26|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_2|bullet:bullet_25|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_2|bullet:bullet_24|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_2|bullet:bullet_23|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_2|bullet:bullet_22|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_2|bullet:bullet_21|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_2|bullet:bullet_20|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_2|bullet:bullet_19|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_2|bullet:bullet_18|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_2|bullet:bullet_17|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_2|bullet:bullet_16|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_2|bullet:bullet_15|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_2|bullet:bullet_14|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_2|bullet:bullet_13|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_2|bullet:bullet_12|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_2|bullet:bullet_11|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_2|bullet:bullet_10|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_2|bullet:bullet_9|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_2|bullet:bullet_8|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_2|bullet:bullet_7|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_2|bullet:bullet_6|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_2|bullet:bullet_5|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_2|bullet:bullet_4|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_2|bullet:bullet_3|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_2|bullet:bullet_2|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_2|bullet:bullet_1|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_2|bullet:bullet_0|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_29|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_28|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_27|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_26|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_25|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_24|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_23|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_22|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_21|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_20|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_19|state
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
+state.MOVING_LEFT 0 0 1 1 
+state.MOVING_RIGHT 0 1 0 1 
+state.WAIT 1 0 0 1 
 
 State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_18|state
-Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
-state.WAIT 0 0 0 0 
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
 state.MOVING_LEFT 0 0 1 1 
 state.MOVING_RIGHT 0 1 0 1 
-state.CD 1 0 0 1 
+state.WAIT 1 0 0 1 
 
 State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_17|state
-Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
-state.WAIT 0 0 0 0 
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
 state.MOVING_LEFT 0 0 1 1 
 state.MOVING_RIGHT 0 1 0 1 
-state.CD 1 0 0 1 
+state.WAIT 1 0 0 1 
 
 State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_16|state
-Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
-state.WAIT 0 0 0 0 
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
 state.MOVING_LEFT 0 0 1 1 
 state.MOVING_RIGHT 0 1 0 1 
-state.CD 1 0 0 1 
+state.WAIT 1 0 0 1 
 
 State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_15|state
-Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
-state.WAIT 0 0 0 0 
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
 state.MOVING_LEFT 0 0 1 1 
 state.MOVING_RIGHT 0 1 0 1 
-state.CD 1 0 0 1 
+state.WAIT 1 0 0 1 
 
 State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_14|state
-Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
-state.WAIT 0 0 0 0 
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
 state.MOVING_LEFT 0 0 1 1 
 state.MOVING_RIGHT 0 1 0 1 
-state.CD 1 0 0 1 
+state.WAIT 1 0 0 1 
 
 State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_13|state
-Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
-state.WAIT 0 0 0 0 
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
 state.MOVING_LEFT 0 0 1 1 
 state.MOVING_RIGHT 0 1 0 1 
-state.CD 1 0 0 1 
+state.WAIT 1 0 0 1 
 
 State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_12|state
-Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
-state.WAIT 0 0 0 0 
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
 state.MOVING_LEFT 0 0 1 1 
 state.MOVING_RIGHT 0 1 0 1 
-state.CD 1 0 0 1 
+state.WAIT 1 0 0 1 
 
 State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_11|state
-Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
-state.WAIT 0 0 0 0 
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
 state.MOVING_LEFT 0 0 1 1 
 state.MOVING_RIGHT 0 1 0 1 
-state.CD 1 0 0 1 
+state.WAIT 1 0 0 1 
 
 State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_10|state
-Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
-state.WAIT 0 0 0 0 
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
 state.MOVING_LEFT 0 0 1 1 
 state.MOVING_RIGHT 0 1 0 1 
-state.CD 1 0 0 1 
+state.WAIT 1 0 0 1 
 
 State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_9|state
-Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
-state.WAIT 0 0 0 0 
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
 state.MOVING_LEFT 0 0 1 1 
 state.MOVING_RIGHT 0 1 0 1 
-state.CD 1 0 0 1 
+state.WAIT 1 0 0 1 
 
 State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_8|state
-Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
-state.WAIT 0 0 0 0 
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
 state.MOVING_LEFT 0 0 1 1 
 state.MOVING_RIGHT 0 1 0 1 
-state.CD 1 0 0 1 
+state.WAIT 1 0 0 1 
 
 State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_7|state
-Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
-state.WAIT 0 0 0 0 
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
 state.MOVING_LEFT 0 0 1 1 
 state.MOVING_RIGHT 0 1 0 1 
-state.CD 1 0 0 1 
+state.WAIT 1 0 0 1 
 
 State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_6|state
-Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
-state.WAIT 0 0 0 0 
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
 state.MOVING_LEFT 0 0 1 1 
 state.MOVING_RIGHT 0 1 0 1 
-state.CD 1 0 0 1 
+state.WAIT 1 0 0 1 
 
 State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_5|state
-Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
-state.WAIT 0 0 0 0 
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
 state.MOVING_LEFT 0 0 1 1 
 state.MOVING_RIGHT 0 1 0 1 
-state.CD 1 0 0 1 
+state.WAIT 1 0 0 1 
 
 State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_4|state
-Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
-state.WAIT 0 0 0 0 
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
 state.MOVING_LEFT 0 0 1 1 
 state.MOVING_RIGHT 0 1 0 1 
-state.CD 1 0 0 1 
+state.WAIT 1 0 0 1 
 
 State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_3|state
-Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
-state.WAIT 0 0 0 0 
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
 state.MOVING_LEFT 0 0 1 1 
 state.MOVING_RIGHT 0 1 0 1 
-state.CD 1 0 0 1 
+state.WAIT 1 0 0 1 
 
 State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_2|state
-Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
-state.WAIT 0 0 0 0 
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
 state.MOVING_LEFT 0 0 1 1 
 state.MOVING_RIGHT 0 1 0 1 
-state.CD 1 0 0 1 
+state.WAIT 1 0 0 1 
 
 State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_1|state
-Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
-state.WAIT 0 0 0 0 
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
 state.MOVING_LEFT 0 0 1 1 
 state.MOVING_RIGHT 0 1 0 1 
-state.CD 1 0 0 1 
+state.WAIT 1 0 0 1 
 
 State Machine - |lab8|bullet_controller:bullet_controller_1|bullet:bullet_0|state
-Name state.CD state.MOVING_RIGHT state.MOVING_LEFT state.WAIT 
-state.WAIT 0 0 0 0 
+Name state.WAIT state.MOVING_RIGHT state.MOVING_LEFT state.CD 
+state.CD 0 0 0 0 
 state.MOVING_LEFT 0 0 1 1 
 state.MOVING_RIGHT 0 1 0 1 
-state.CD 1 0 0 1 
+state.WAIT 1 0 0 1 
+
+State Machine - |lab8|chara:chara_2_instance|state_deflect
+Name state_deflect.DEFLECT 
+state_deflect.WAIT 0 
+state_deflect.DEFLECT 1 
+
+State Machine - |lab8|chara:chara_2_instance|state_dragon
+Name state_dragon.DRAGON_WAIT state_dragon.DRAGON_CD state_dragon.DRAGON_PREPARED 
+state_dragon.DRAGON_WAIT 0 0 0 
+state_dragon.DRAGON_PREPARED 1 0 1 
+state_dragon.DRAGON_CD 1 1 0 
 
 State Machine - |lab8|chara:chara_2_instance|state_y
 Name state_y.STAND state_y.MOVING_DOWN state_y.MOVING_UP 
 state_y.STAND 0 0 0 
 state_y.MOVING_UP 1 0 1 
 state_y.MOVING_DOWN 1 1 0 
+
+State Machine - |lab8|chara:chara_1_instance|state_deflect
+Name state_deflect.DEFLECT 
+state_deflect.WAIT 0 
+state_deflect.DEFLECT 1 
+
+State Machine - |lab8|chara:chara_1_instance|state_dragon
+Name state_dragon.DRAGON_WAIT state_dragon.DRAGON_CD state_dragon.DRAGON_PREPARED 
+state_dragon.DRAGON_WAIT 0 0 0 
+state_dragon.DRAGON_PREPARED 1 0 1 
+state_dragon.DRAGON_CD 1 1 0 
 
 State Machine - |lab8|chara:chara_1_instance|state_y
 Name state_y.STAND state_y.MOVING_DOWN state_y.MOVING_UP 

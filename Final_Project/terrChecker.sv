@@ -17,11 +17,11 @@ module  terrChecker ( input [9:0]   left, right, bot, speed_y,
 				on_build = 1'b1;
 			
 			// speed down near the ground
-			if (bot<=439&&bot+speed_y>10'd439)
+			if (bot<=439&&bot+speed_y>10'd439) // bot =439
 				bias = 10'd439-bot-speed_y;
-			else if (bot<397&&bot+speed_y>10'd397&&left>=11&&right<=91)
+			else if (bot<397&&bot+speed_y>10'd397&&left>=11&&right<=91) // bot =397
 				bias = 10'd397-bot-speed_y;
-			else if (bot<317&&bot+speed_y>10'd317&&left>=28&&right<=267)
+			else if (bot<317&&bot+speed_y>10'd317&&left>=28&&right<=267)// bot = 316
 				bias = 10'd317-bot-speed_y;
 			else
 				bias = 0;

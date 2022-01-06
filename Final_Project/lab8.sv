@@ -47,15 +47,28 @@ module lab8( input               CLOCK_50,
                     );
     
     logic Reset_h, Reset_chara, Clk, test_1, test_2;
+	 logic [1:0] chara_id_1, chara_id_2;
     logic [7:0] keycode,keycode0,keycode1,keycode2,keycode3,keycode4;
 	 logic [9:0] DrawX, DrawY;
     //logic is_ball;
 	 logic [7:0] led;
-    
+	 assign chara_id_1 = 2'b01;
+	 assign chara_id_2 = 2'b00;
+	 
     assign Clk = CLOCK_50;
     always_ff @ (posedge Clk) begin
         //Reset_h <= ~(KEY[0]);        // The push buttons are active low
-		  Reset_chara <= ~(KEY[1]);
+		  Reset_chara <= ~(KEY[0]);
+		  /*if (~KEY[1]) begin
+			 chara_id_1 = 2'b00;
+			 chara_id_2 = 2'b01;
+		  end
+		  if (~KEY[2]) begin
+			 chara_id_1 = 2'b01;
+		  end
+		  if (~KEY[3]) begin
+			 chara_id_2 = 2'b00;
+		  end*/
 		  //LEDG <= led
     end
     
@@ -132,32 +145,24 @@ module lab8( input               CLOCK_50,
 	 );
 	
     
-	 logic [11:0] spriteColor; 
+	 logic [12:0] spriteColor; 
 	 logic [16:0] read_address;	
 	 
 	 logic [7:0] spriteColor_tracer_1, spriteColor_tracer_2;
 	 logic [2:0] figure_1, figure_2;
+	 logic [23:0] bomb_color_1, bomb_color_2;
 	 //logic [11:0] read_address_tracer_1, read_address_tracer_2;
 	 
 	 logic is_chara_1, is_chara_2;
+	 logic [1:0] blink_charge_1, blink_charge_2;
 	 
-	 assign read_address = DrawX[9:1] + DrawY[9:1]*320;
-	 
-	 /*always_comb begin
-			read_address_tracer_1 = (DrawX-chara_left_1) + (DrawY-chara_top_1)*31;
-			read_address_tracer_2 = (DrawX-chara_left_2) + (DrawY-chara_top_2)*31;
-			if (chara_direction_1)
-					read_address_tracer_1 = (DrawX-chara_left_1) + (DrawY-chara_top_1)*31 + 12'd1302;
-			if (chara_direction_2)
-					read_address_tracer_2 = (DrawX-chara_left_2) + (DrawY-chara_top_2)*31 + 12'd1302;
-	 end*/
-	 
-	 /*frameROM rom_instance(.read_address(read_address),
+	 assign read_address = DrawX/2 + DrawY*160;
+	 /*
+		 frameROM rom_instance(.read_address(read_address),
 								  .Clk(Clk),
 								  
 								  .spriteColor(spriteColor) // output
-	);*/
-	
+	); */
 	
 	tracerROM tracer_rom_instance_1(.chara_direction(chara_direction_1), 
 											  .DrawX(DrawX),
@@ -170,6 +175,7 @@ module lab8( input               CLOCK_50,
 											  .count_k(count_k_1),
 											  .count_l(count_l_1),
 											  .count_s(count_s_1),
+											  .chara_id(chara_id_1),
 											  
 											  .spriteColor(spriteColor_tracer_1) 
 	);
@@ -185,18 +191,120 @@ module lab8( input               CLOCK_50,
 											  .count_k(count_k_2),
 											  .count_l(count_l_2),
 											  .count_s(count_s_2),
+											  .chara_id(chara_id_2),
 								  
 								     .spriteColor(spriteColor_tracer_2) 
 	);
 	
+	logic [7:0] sprigeColor_genji_1, sprigeColor_genji_2;
+	
+	genjiROM genji_rom_instance_1(.chara_direction(chara_direction_1), 
+											  .DrawX(DrawX),
+											  .DrawY(DrawY), 
+											  .chara_left(chara_left_1), 
+											  .chara_top(chara_top_1),
+											  .is_chara(is_chara_1),
+											  .figure(figure_1),
+											  .Clk(Clk),
+											  .count_dragon(count_dragon_1),
+											  .dragon(dragon_1),
+											  .deflect(deflect_1),
+											  .chara_id(chara_id_1),
+											  .swift(swift_1),
+								  
+								     .spriteColor(spriteColor_genji_1) 
+	);
+	
+	genjiROM genji_rom_instance_2(.chara_direction(chara_direction_2), 
+											  .DrawX(DrawX),
+											  .DrawY(DrawY), 
+											  .chara_left(chara_left_2), 
+											  .chara_top(chara_top_2),
+											  .is_chara(is_chara_2),
+											  .figure(figure_2),
+											  .Clk(Clk),
+											  .count_dragon(count_dragon_2),
+											  .dragon(dragon_2),
+											  .deflect(deflect_2),
+											  .chara_id(chara_id_2),
+											  .swift(swift_2),
+								  
+								     .spriteColor(spriteColor_genji_2) 
+	);
+	
+	logic [7:0] spriteColor_skill;
+	skillROM skillROM_instance (.DrawX(DrawX),
+										 .DrawY(DrawY),
+										 .chara_id_1(chara_id_1),
+										 .chara_id_2(chara_id_2),
+										 .Clk(Clk),
+										 .count_k_1(count_k_1),
+										 .count_k_2(count_k_2),
+										 .count_l_1(count_l_1),
+										 .count_l_2(count_l_2),
+										 .blink_charge_1(blink_charge_1),
+										 .blink_charge_2(blink_charge_2),
+										 
+										 .spriteColor(spriteColor_skill)
+										 );
+										 
+	bomb_warningROM warningrom_instance_1(.DrawX(DrawX),
+						 .DrawY(DrawY),
+						 .chara_id(chara_id_1),
+						 .Clk(Clk),
+						 .bomb_left(bomb_left_1),
+						 .bomb_top(bomb_top_1),
+						 .count_bomb(bomb_count_1),
+						 
+						 .spriteColor(bomb_warning_color_1)
+						 );
+						 
+	bomb_warningROM warningrom_instance_2(.DrawX(DrawX),
+						 .DrawY(DrawY),
+						 .chara_id(chara_id_2),
+						 .Clk(Clk),
+						 .bomb_left(bomb_left_2),
+						 .bomb_top(bomb_top_2),
+						 .count_bomb(bomb_count_2),
+						 
+						 .spriteColor(bomb_warning_color_2)
+						 );
+										
+	
+	logic [23:0] bullet_show_color_1, bullet_show_color_2;
+	
+	bullet_show bullet_show_1 (.frame_clk(VGA_VS),
+										.bullet_state(bullet_state_1),
+										.DrawX(DrawX),
+										.DrawY(DrawY),
+										.chara_id(chara_id_1),
+										.pl(0),
+										
+										.bullet_show_color(bullet_show_color_1)
+										);
+	
+	bullet_show bullet_show_2 (.frame_clk(VGA_VS),
+										.bullet_state(bullet_state_2),
+										.DrawX(DrawX),
+										.DrawY(DrawY),
+										.chara_id(chara_id_2),
+										.pl(1'b1),
+										
+										.bullet_show_color(bullet_show_color_2)
+										);
+	
 	
 	logic[9:0] chara_top_1, chara_bot_1, chara_left_1, chara_right_1, chara_top_2, chara_bot_2, chara_left_2, chara_right_2;
-	logic on_ground_1, on_build_1, on_ground_2, on_build_2;
+	logic on_ground_1, on_build_1, on_ground_2, on_build_2, DRAGON_hit_1, DRAGON_hit_2;
 	logic moving_left_1,moving_right_1, moving_up_1, moving_down_1, moving_left_2,moving_right_2, moving_up_2, moving_down_2;
 	logic chara_direction_1, chara_direction_2;
-	logic press_a, press_s, press_d, press_w, press_j, press_k, press_l, press_i;
-	logic press_up, press_down, press_left, press_right, press_1, press_2, press_3, press_5;
+	logic [9:0] count_u_1, count_u_2, count_dragon_1, count_dragon_2;
+	logic press_a, press_s, press_d, press_w, press_j, press_k, press_l, press_u, dragon_1, dragon_2;
+	logic press_up, press_down, press_left, press_right, press_1, press_2, press_3, press_4;
 	logic [9:0] speed_y_1, bias_1, speed_y_2, bias_2, count_k_1, count_k_2, count_l_1, count_l_2, count_s_1, count_s_2;
+	logic [9:0] count_recall_1, count_recall_2;
+	logic deflect_1, deflect_2, deflect_left_2, deflect_left_1, deflect_right_1, deflect_right_2;
+	logic swift_1, swift_2;
 	
 	chara chara_1_instance (         .Clk(Clk),                 
 												.Reset(Reset_chara),               
@@ -207,17 +315,22 @@ module lab8( input               CLOCK_50,
 												.press_d(press_d),
 												.press_k(press_k), 
 												.press_l(press_l), 
-												.press_i(press_i),
+												.press_u(press_u),
+												.press_j(press_j),
 												.on_ground(on_ground_1), 
 												.on_build(on_build_1),
-												.width(6'd39),
-												.height(6'd43), // this means 40*44
+												//.width(6'd39),
+												//.height(6'd43), // this means 40*44
 												.left_initial(10'd145),
 												.bot_initial(10'd439),
 												.bias(bias_1),
-												.chara_id(2'b00),
-												.is_ready(is_ready),
-									
+												.chara_id(chara_id_1),
+												.is_ready(is_ready_1),
+												.opponent_left(chara_left_2),
+												.opponent_right(chara_right_2),
+												.opponent_top(chara_top_2),
+												.opponent_bot(chara_bot_2),
+												.pl(0),
 												
 												
 												.chara_direction(chara_direction_1),  
@@ -233,8 +346,20 @@ module lab8( input               CLOCK_50,
 												.count_k(count_k_1),
 												.count_l(count_l_1),
 												.count_s(count_s_1),
+												.count_u(count_u_1),
+												.count_dragon(count_dragon_1),
+												.count_recall(count_recall_1),
 												.reset_energy(reset_energy_1),
 												.speed_y(speed_y_1),
+												.dragon(dragon_1),
+												.DRAGON_hit(DRAGON_hit_1),
+												.SWIFT_hit(swift_hit_1),
+												.recall(recall_1),
+												.deflect(deflect_1),
+												.deflect_left(deflect_left_1),
+												.deflect_right(deflect_right_1),
+												.blink_charge(blink_charge_1),
+												.swift(swift_1),
 												.test(test_1)
    );
 	
@@ -247,16 +372,23 @@ module lab8( input               CLOCK_50,
 												.press_d(press_right),
 												.press_k(press_2),
 												.press_l(press_3),
-												.press_i(press_5),
+												.press_u(press_4),
+												.press_j(press_1),
 												.on_ground(on_ground_2), 
 												.on_build(on_build_2),
-												.width(6'd39),
-												.height(6'd43), // this means 40*44
+												//.width(6'd39),
+												//.height(6'd43), // this means 40*44
 												.left_initial(10'd464),
 												.bot_initial(10'd439),
 												.bias(bias_2),
-												.chara_id(2'b01),
-												.is_ready(is_ready),
+												.chara_id(chara_id_2),
+												.is_ready(is_ready_2),
+												.opponent_left(chara_left_1),
+												.opponent_right(chara_right_1),
+												.opponent_top(chara_top_1),
+												.opponent_bot(chara_bot_1),
+												.pl(1'b1),
+												
 												
 												
 												.chara_direction(chara_direction_2),  
@@ -272,82 +404,249 @@ module lab8( input               CLOCK_50,
 												.count_k(count_k_2),
 												.count_l(count_l_2),
 												.count_s(count_s_2),
+												.count_u(count_u_2),
+												.count_dragon(count_dragon_2),
+												.count_recall(count_recall_2),
 												.reset_energy(reset_energy_2),
 												.speed_y(speed_y_2),
+												.dragon(dragon_2),
+												.DRAGON_hit(DRAGON_hit_2),
+												.SWIFT_hit(swift_hit_2),
+												.recall(recall_2),
+												.deflect(deflect_2),
+												.deflect_left(deflect_left_2),
+												.deflect_right(deflect_right_2),
+												.blink_charge(blink_charge_2),
+												.swift(swift_2),
 												.test(test_2)
    );
 	
 
-	logic [9:0] show_x, show_y;
-	logic [1:0] bullet_state[20];
-	logic [23:0] bullet_color, dart_color_center, dart_color_body;
-	logic [19:0] hit;
-	logic is_healthbar;
-	logic is_energybar;
-	logic is_ready;
+	logic [9:0] show_x_1, show_y_1, show_x_2, show_y_2;
+	logic [1:0] bullet_state_1[30];
+	logic [1:0] bullet_state_2[30];
+	logic [23:0] bullet_color_1, bullet_color_2;
+	logic [29:0] hit_1, hit_2;
+	logic is_healthbar_1, is_healthbar_2;
+	logic is_energybar_1, is_energybar_2;
+	logic is_ready_1, is_ready_2;
    logic reset_energy_1;
 	logic reset_energy_2;
-	logic gameover;
+	logic gameover_1, gameover_2;
+	logic recall_1, recall_2;
+	logic deflect_hit_1, deflect_hit_2;
+	logic [9:0] damageUnit_1, damageUnit_2;
 	
 	always_comb begin
-		show_y = chara_top_1 + 4'd10;
+		if (chara_id_1==0)
+			show_y_1 = chara_top_1 + 4'd10;
+		else 
+			show_y_1 = chara_top_1 + 10'd24;
 		if (~chara_direction_1)
-			show_x = chara_left_1 - 1'b1;
+			show_x_1 = chara_left_1 - 1'b1;
 		else
-			show_x = chara_right_1 + 1'b1;	
+			show_x_1 = chara_right_1 + 1'b1;
+		
+		if (chara_id_2==0)
+			show_y_2 = chara_top_2 + 4'd10;
+		else 
+			show_y_2 = chara_top_2 + 10'd24;
+		if (~chara_direction_2)
+			show_x_2 = chara_left_2 - 1'b1;
+		else
+			show_x_2 = chara_right_2 + 1'b1;	
+		if (chara_id_1==0)
+			damageUnit_1 = 10'd6;
+		else
+			damageUnit_1 = 10'd14;
+		if (chara_id_2==0)
+			damageUnit_2 = 10'd6;
+		else
+			damageUnit_2 = 10'd14;
 	end
 	
 	energybar energybar_1( 
 							 .frame_clk(VGA_VS),
-							 .hit(hit),          	  
-							 .bullet_state(bullet_state),
+							 .hit(hit_2),          	  
+							 .bullet_state(bullet_state_2),
 							 .DrawX(DrawX), 
 							 .DrawY(DrawY),
 							 .reset(Reset_chara),
-							 .damageUnit(10'd6),
+							 .damageUnit(damageUnit_2),
 							 .full_energy(10'd150),
-							 .reset_energy(reset_energy_1),
+							 .reset_energy(press_u),
+							 .pl(1'b0),
 							 
-							 .is_energybar(is_energybar),
-							 .is_ready(is_ready)
+							 .is_energybar(is_energybar_1),
+							 .is_ready(is_ready_1)
 	
 								);
 	
-	healthbar healthbar_2(			 
+	energybar energybar_2( 
 							 .frame_clk(VGA_VS),
-							 .hit(hit),          	  
-							 .bullet_state(bullet_state),
+							 .hit(hit_1),          	  
+							 .bullet_state(bullet_state_1),
 							 .DrawX(DrawX), 
 							 .DrawY(DrawY),
 							 .reset(Reset_chara),
-							 .damageUnit(10'd6),
-							 .len_init(10'd150),
+							 .damageUnit(damageUnit_1),
+							 .full_energy(10'd150),
+							 .reset_energy(press_4),
+							 .pl(1'b1),
 							 
-							 .is_healthbar(is_healthbar),
-							 .gameover(gameover)
+							 .is_energybar(is_energybar_2),
+							 .is_ready(is_ready_2)
+	
+								);
+	
+	healthbar healthbar_1(			 
+							 .frame_clk(VGA_VS),
+							 .hit(hit_2),          	  
+							 .bullet_state(bullet_state_2),
+							 .deflect_hit(hit_4),
+							 .deflect_bullet_state(bullet_state_4),
+							 .DrawX(DrawX), 
+							 .DrawY(DrawY),
+							 .reset(Reset_chara),
+							 .damageUnit_1(damageUnit_2),
+							 .damageUnit_2(damageUnit_1),
+							 //.len_init(10'd150),
+							 .chara_id(chara_id_1),
+							 .pl(0),
+							 .bomb_hit(bomb_hit_2),
+							 .boom_hit(boom_hit_2),
+							 .dragon_hit(DRAGON_hit_2),
+							 .swift_hit(swift_hit_2),
+							 .count_recall(count_recall_1),
+							 .recall(recall_1),
+							 .deflect(deflect_1),
+							 .KO(gameover_1||gameover2),
+							 
+							 .is_healthbar(is_healthbar_1),
+							 .gameover(gameover_1)
+							 );
+	
+	healthbar healthbar_2(			 
+							 .frame_clk(VGA_VS),
+							 .hit(hit_1),          	  
+							 .bullet_state(bullet_state_1),
+							 .deflect_hit(hit_3),
+							 .deflect_bullet_state(bullet_state_3),
+							 .DrawX(DrawX), 
+							 .DrawY(DrawY),
+							 .reset(Reset_chara),
+							 .damageUnit_1(damageUnit_1),
+							 .damageUnit_2(damageUnit_2),
+							 //.len_init(10'd150),
+							 .chara_id(chara_id_2),
+							 .pl(1'b1),
+							 .bomb_hit(bomb_hit_1),
+							 .boom_hit(boom_hit_1),
+							 .dragon_hit(DRAGON_hit_1),
+							 .swift_hit(swift_hit_1),
+							 .count_recall(count_recall_2),
+							 .recall(recall_2),
+							 .deflect(deflect_2),
+							 .KO(gameover_1||gameover2),
+							 
+							 .is_healthbar(is_healthbar_2),
+							 .gameover(gameover_2)
 							 );
 							 
-							 
-	bullet_controller bullet_controller_1 (//.Clk(Clk),
-                         //.Reset(Reset_chara),
+	logic test1, test2, test3, test4;						 
+	bullet_controller bullet_controller_1 (.Reset(Reset_chara),
                          .frame_clk(VGA_VS),
-								 //.X_Step(10'd6),
-								 //.fire_range(10'd160),
 								 .chara_direction(chara_direction_1),
-								 .show_x(show_x), .show_y(show_y),
+								 .show_x(show_x_1), .show_y(show_y_1),
 								 .chara_left(chara_left_2), .chara_right(chara_right_2), .chara_top(chara_top_2), .chara_bot(chara_bot_2), // another character
 								 .press_j(press_j),
-								 //.fire_period(10'b11),
-								 //.reload_period(10'd69),
 								 .DrawX(DrawX),
 								 .DrawY(DrawY),
-								 .chara_id(2'b01),
+								 .chara_id(chara_id_1),
+								 .dragon(dragon_1),
+								 .deflect(deflect_1),
+								 .deflect_left(deflect_left_2),
+								 .deflect_right(deflect_right_2),
+								 .deflect_color(0),
 					 
-								 .bullet_color(bullet_color),
-								 .bullet_state(bullet_state),
-								 .dart_color_center(dart_color_center), 
-								 .dart_color_body(dart_color_body),
-								 .hit(hit)
+								 .bullet_color(bullet_color_1),
+								 .bullet_state(bullet_state_1),
+								 .hit(hit_1),
+								 .DEFLECT_HIT(deflect_hit_2),
+								 .test(test1)
+								 );
+								 
+	bullet_controller bullet_controller_2 (.Reset(Reset_chara),
+                         .frame_clk(VGA_VS),
+								 .chara_direction(chara_direction_2),
+								 .show_x(show_x_2), .show_y(show_y_2),
+								 .chara_left(chara_left_1), .chara_right(chara_right_1), .chara_top(chara_top_1), .chara_bot(chara_bot_1), // another character
+								 .press_j(press_1),
+								 .DrawX(DrawX),
+								 .DrawY(DrawY),
+								 .chara_id(chara_id_2),
+								 .dragon(dragon_2),
+								 .deflect(deflect_2),
+								 .deflect_left(deflect_left_1),
+								 .deflect_right(deflect_right_1),
+								 .deflect_color(0),
+					 
+								 .bullet_color(bullet_color_2),
+								 .bullet_state(bullet_state_2),
+								 .hit(hit_2),
+								 .DEFLECT_HIT(deflect_hit_1),
+								 .test(test2)
+								 );
+								 
+	logic [23:0] bullet_color_3, bullet_color_4;
+	logic [1:0] bullet_state_3 [30];
+	logic [1:0] bullet_state_4 [30];
+	logic [29:0] hit_3, hit_4;
+	logic deflect_hit_3, deflect_hit_4;
+	bullet_controller deflect_controller_1 (.Reset(Reset_chara),
+                         .frame_clk(VGA_VS),
+								 .chara_direction(chara_direction_1),
+								 .show_x(show_x_1), .show_y(show_y_1),
+								 .chara_left(chara_left_2), .chara_right(chara_right_2), .chara_top(chara_top_2), .chara_bot(chara_bot_2), // another character
+								 .press_j(deflect_hit_1||deflect_hit_4),
+								 //.press_j(press_j),
+								 .DrawX(DrawX),
+								 .DrawY(DrawY),
+								 .chara_id(chara_id_2),
+								 .dragon(0),
+								 .deflect(0),
+								 .deflect_left(deflect_left_2),
+								 .deflect_right(deflect_right_2),
+								 .deflect_color(1'b1),
+					 
+								 .bullet_color(bullet_color_3),
+								 .bullet_state(bullet_state_3),
+								 .hit(hit_3),
+								 .DEFLECT_HIT(deflect_hit_3),
+								 .test(test3)
+								 );
+	
+	bullet_controller deflect_controller_2 (.Reset(Reset_chara),
+                         .frame_clk(VGA_VS),
+								 .chara_direction(chara_direction_2),
+								 .show_x(show_x_2), .show_y(show_y_2),
+								 .chara_left(chara_left_1), .chara_right(chara_right_1), .chara_top(chara_top_1), .chara_bot(chara_bot_1), // another character
+								 .press_j(deflect_hit_2||deflect_hit_3),
+								 //.press_j(press_1),
+								 .DrawX(DrawX),
+								 .DrawY(DrawY),
+								 .chara_id(chara_id_1),
+								 .dragon(0),
+								 .deflect(0),
+								 .deflect_left(deflect_left_1),
+								 .deflect_right(deflect_right_1),
+								 .deflect_color(1'b1),
+					 
+								 .bullet_color(bullet_color_4),
+								 .bullet_state(bullet_state_4),
+								 .hit(hit_4),
+								 .DEFLECT_HIT(deflect_hit_4),
+								 .test(test4)
 								 );
 								 
 
@@ -369,7 +668,30 @@ module lab8( input               CLOCK_50,
 													.on_build(on_build_2),            
 													.on_ground(on_ground_2),
 													.bias(bias_2)
-	);	
+	);
+
+	logic [9:0] bomb_left_1, bomb_left_2, bomb_right_1, bomb_right_2, bomb_bot_1, bomb_bot_2, bomb_speed_y_1, bomb_speed_y_2, bomb_top_1, bomb_top_2;
+	logic bomb_on_ground_1, bomb_on_ground_2, bomb_on_build_1, bomb_on_build_2;
+	logic [9:0] bomb_bias_1, bomb_bias_2;
+	terrChecker terrChecker_bomb_1(   .left(bomb_left_1), 
+													.right(bomb_right_1), 
+													.bot(bomb_bot_1), 
+													.speed_y(bomb_speed_y_1),
+						   
+													.on_build(bomb_on_build_1),            
+													.on_ground(bomb_on_ground_1),
+													.bias(bomb_bias_1)
+	);
+	
+	terrChecker terrChecker_bomb_2(   .left(bomb_left_2), 
+													.right(bomb_right_2), 
+													.bot(bomb_bot_2), 
+													.speed_y(bomb_speed_y_2),
+						   
+													.on_build(bomb_on_build_2),            
+													.on_ground(bomb_on_ground_2),
+													.bias(bomb_bias_2)
+	);
 
 	
 	is_chara is_chara_1_instance  (
@@ -394,22 +716,108 @@ module lab8( input               CLOCK_50,
 										  .is_chara(is_chara_2) 
 	);
 	
+	logic bomb_hit_1, bomb_hit_2, boom_hit_1, boom_hit_2, swift_hit_1, swift_hit_2;
+	
+	pulse_bomb bomb_1_instance (.Reset(Reset_chara),
+										 .frame_clk(VGA_VS),
+										 .on_ground(bomb_on_ground_1),
+										 .on_build(bomb_on_build_1),
+										 .chara_id(chara_id_1),
+										 .full_energy(is_ready_1),
+										 .press_u(press_u),
+										 .bias(bomb_bias_1),
+										 .chara_direction(chara_direction_1),
+										 .chara_left(chara_left_1),
+										 .chara_right(chara_right_1),
+										 .chara_top(chara_top_1),
+										 .DrawX(DrawX),
+										 .DrawY(DrawY),
+										 .opponent_left(chara_left_2),
+										 .opponent_right(chara_right_2),
+										 .opponent_bot(chara_bot_2),
+										 .opponent_top(chara_top_2),
+										 .deflect_left(deflect_left_2),
+										 .deflect_right(deflect_right_2),
+										 
+										 .bomb_color(bomb_color_1),
+										 .left(bomb_left_1),
+										 .right(bomb_right_1),
+										 .top(bomb_top_1),
+										 .bot(bomb_bot_1),
+										 .speed_y(bomb_speed_y_1),
+										 .BOMB_hit(bomb_hit_1),
+										 .BOOM_hit(boom_hit_1),
+										 .count_boom(bomb_count_1)
+	);
+	
+	pulse_bomb bomb_2_instance (.Reset(Reset_chara),
+										 .frame_clk(VGA_VS),
+										 .on_ground(bomb_on_ground_2),
+										 .on_build(bomb_on_build_2),
+										 .chara_id(chara_id_2),
+										 .full_energy(is_ready_2),
+										 .press_u(press_4),
+										 .bias(bomb_bias_2),
+										 .chara_direction(chara_direction_2),
+										 .chara_left(chara_left_2),
+										 .chara_right(chara_right_2),
+										 .chara_top(chara_top_2),
+										 .DrawX(DrawX),
+										 .DrawY(DrawY),
+										 .opponent_left(chara_left_1),
+										 .opponent_right(chara_right_1),
+										 .opponent_bot(chara_bot_1),
+										 .opponent_top(chara_top_1),
+										 .deflect_left(deflect_left_1),
+										 .deflect_right(deflect_right_1),
+										 
+										 .bomb_color(bomb_color_2),
+										 .left(bomb_left_2),
+										 .right(bomb_right_2),
+										 .top(bomb_top_2),
+										 .bot(bomb_bot_2),
+										 .speed_y(bomb_speed_y_2),
+										 .BOMB_hit(bomb_hit_2),
+										 .BOOM_hit(boom_hit_2),
+										 .count_boom(bomb_count_2)
+	);
+	
+	logic bomb_warning_color_1, bomb_warning_color_2;
+	logic [9:0] bomb_count_1, bomb_count_2;
+	logic [7:0] spriteColor_genji_1, spriteColor_genji_2;
+	
 	 color_mapper color_instance(.DrawX(DrawX),
                                 .DrawY(DrawY),
 										  .spriteColor(spriteColor),
 										  .spriteColor_tracer_1(spriteColor_tracer_1),
 										  .spriteColor_tracer_2(spriteColor_tracer_2),
-										  .is_healthbar(is_healthbar),
-										  .is_energybar(is_energybar),
-										  .bullet_color(bullet_color),
+										  .spriteColor_genji_1(spriteColor_genji_1),
+										  .spriteColor_genji_2(spriteColor_genji_2),
+										  .is_healthbar_1(is_healthbar_1),
+										  .is_healthbar_2(is_healthbar_2),
+										  .is_energybar_1(is_energybar_1),
+										  .is_energybar_2(is_energybar_2),
+										  .bullet_color_1(bullet_color_1),
+										  .bullet_color_2(bullet_color_2),
+										  .bullet_color_3(bullet_color_3),
+										  .bullet_color_4(bullet_color_4),
 										  .is_tracer_1(is_chara_1),
 										  .is_tracer_2(is_chara_2),
-										  .chara_id_1(0),
-										  .chara_id_2(0),
+										  .chara_id_1(chara_id_1),
+										  .chara_id_2(chara_id_2),
 										  .count_k_1(count_k_1),
 										  .count_k_2(count_k_2),
 										  .count_l_1(count_l_1),
 										  .count_l_2(count_l_2),
+										  .bomb_color_1(bomb_color_1),
+										  .bomb_color_2(bomb_color_2),
+										  .bullet_show_color_1(bullet_show_color_1),
+										  .bullet_show_color_2(bullet_show_color_2),
+										  .spriteColor_skill(spriteColor_skill),
+										  .bomb_warning_color_1(bomb_warning_color_1),
+										  .bomb_warning_color_2(bomb_warning_color_2),
+										  .bomb_count_1(bomb_count_1),
+										  .bomb_count_2(bomb_count_2),
 										  
                                 .VGA_R(VGA_R), 
                                 .VGA_G(VGA_G), 
@@ -425,7 +833,7 @@ module lab8( input               CLOCK_50,
 														.press_j(press_j),
 														.press_k(press_k), 
 														.press_l(press_l),
-														.press_i(press_i),
+														.press_u(press_u),
 														.press_up(press_up),
 														.press_left(press_left), 
 														.press_right(press_right),
@@ -433,17 +841,17 @@ module lab8( input               CLOCK_50,
 														.press_1(press_1),
 														.press_2(press_2),
 														.press_3(press_3),
-														.press_5(press_5)
+														.press_4(press_4)
 	);
     
     // Display keycode on hex display
 	 
     HexDriver hex_inst_0 ({4{test_1}}, HEX0);
     HexDriver hex_inst_1 ({4{test_2}}, HEX1);
-	 HexDriver hex_inst_2 ({4{press_w}}, HEX2);
-    HexDriver hex_inst_3 ({4{press_j}}, HEX3);
-	 HexDriver hex_inst_4 ({4{hit}}, HEX4);
-    //HexDriver hex_inst_5 ({4{bullet_state}}, HEX5); 
+	 HexDriver hex_inst_2 ({4{test1}}, HEX2);
+    HexDriver hex_inst_3 ({4{test2}}, HEX3);
+	 HexDriver hex_inst_4 ({4{test3}}, HEX4);
+    HexDriver hex_inst_5 ({4{test4}}, HEX5); 
 	 HexDriver hex_inst_6 (keycode[3:0], HEX6);
     HexDriver hex_inst_7 (keycode[7:4], HEX7);
 	 
